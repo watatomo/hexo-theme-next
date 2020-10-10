@@ -19,7 +19,7 @@ $red          = #ff2a2a;
 $blue-bright  = #87daff;
 $blue         = #0684bd;
 $blue-deep    = #262a30;
-$orange       = #fc6423;
+$orange       = #0087fe;
 
 
 // Transition
@@ -75,10 +75,8 @@ get_font_family(config) {
 }
 
 // Font families.
-$font-family-chinese      = "PingFang SC", "Microsoft YaHei";
-
-$font-family-base         = $font-family-chinese, sans-serif;
-$font-family-base         = get_font_family('global'), $font-family-chinese, sans-serif if get_font_family('global');
+$font-family-base         = 'Noto Sans JP', sans-serif;
+$font-family-base         = get_font_family('global'), 'Noto Sans JP', sans-serif if get_font_family('global');
 
 $font-family-logo         = $font-family-base;
 $font-family-logo         = get_font_family('title'), $font-family-base if get_font_family('title');
@@ -87,10 +85,10 @@ $font-family-headings     = $font-family-base;
 $font-family-headings     = get_font_family('headings'), $font-family-base if get_font_family('headings');
 
 $font-family-posts        = $font-family-base;
-$font-family-posts        = get_font_family('posts'), $font-family-base if get_font_family('posts');
+$font-family-posts        = get_font_family('posts'), 'Noto Sans JP', $font-family-base if get_font_family('posts');
 
-$font-family-monospace    = consolas, Menlo, monospace, $font-family-chinese;
-$font-family-monospace    = get_font_family('codes'), consolas, Menlo, monospace, $font-family-chinese if get_font_family('codes');
+$font-family-monospace    = consolas, 'Noto Sans JP', monospace;
+$font-family-monospace    = get_font_family('codes'), 'Noto Sans JP', consolas, monospace if get_font_family('codes');
 
 
 // Font size
@@ -110,8 +108,8 @@ $font-size-headings-base  = (hexo-config('font.enable') and hexo-config('font.he
 
 
 // Global line height
-$line-height-base         = 2;
-$line-height-code-block   = 1.6; // Can't be less than 1.3;
+$line-height-base         = 1.4;
+$line-height-code-block   = 1.4; // Can't be less than 1.3;
 
 
 // Z-index master list
@@ -197,8 +195,8 @@ $content-mobile-padding         = 8px;
 
 // Headband
 // --------------------------------------------------
-$headband-height                = 3px;
-$headband-bg                    = $black-deep;
+$headband-height                = 0;
+$headband-bg                    = 0;
 
 
 // Section Header
@@ -288,36 +286,36 @@ $note-types = 'default' 'primary' 'info' 'success' 'warning' 'danger';
 // Default
 $note-border-radius         = 3px;
 
-$note-border-default        = #777;
+$note-border-default        = #444;
 $note-bg-default            = lighten(spin($note-border-default, 0), 94% + $lbg);
 $note-text-default          = $note-border-default;
 $note-icon-default          = "\f0a9";
 
-$note-modern-border-default = #e1e1e1;
+$note-modern-border-default = #444;
 $note-modern-bg-default     = lighten(spin($note-modern-border-default, 10), 60% + ($lbg * 4));
 $note-modern-text-default   = $grey-dim;
 $note-modern-hover-default  = darken(spin($note-modern-text-default, -10), 32%);
 
 // Primary
-$note-border-primary        = #6f42c1;
+$note-border-primary        = #4247ca;
 $note-bg-primary            = lighten(spin($note-border-primary, 10), 92% + $lbg);
 $note-text-primary          = $note-border-primary;
-$note-icon-primary          = "\f055";
+$note-icon-primary          = "\f276";
 
-$note-modern-border-primary = #e1c2ff;
-$note-modern-bg-primary     = lighten(spin($note-modern-border-primary, 10), 40% + ($lbg * 4));
-$note-modern-text-primary   = #6f42c1;
+$note-modern-border-primary = #b8bbee;
+$note-modern-bg-primary     = lighten(spin($note-modern-border-primary, 10), 60% + ($lbg * 4));
+$note-modern-text-primary   = #6479d1;
 $note-modern-hover-primary  = darken(spin($note-modern-text-primary, -10), 22%);
 
 // Info
 $note-border-info           = #428bca;
 $note-bg-info               = lighten(spin($note-border-info, -10), 91% + $lbg);
 $note-text-info             = $note-border-info;
-$note-icon-info             = "\f05a";
+$note-icon-info             = "\f124";
 
-$note-modern-border-info    = #b3e5ef;
-$note-modern-bg-info        = lighten(spin($note-modern-border-info, 10), 50% + ($lbg * 4));
-$note-modern-text-info      = #31708f;
+$note-modern-border-info    = #b8d6ee;
+$note-modern-bg-info        = lighten(spin($note-modern-border-info, 10), 60% + ($lbg * 4));
+$note-modern-text-info      = #649dd1;
 $note-modern-hover-info     = darken(spin($note-modern-text-info, -10), 32%);
 
 // Success

@@ -39,7 +39,7 @@
 
     // For paragraphs narrow width.
     > p {
-      margin: 0 0 10px 0;
+      margin: 0 0 .6em 0;
     }
 
     // Rewrite paddings & margins inside tags.
@@ -47,12 +47,12 @@
       padding: 0 5px;
     }
 
-    img, video {
-      margin-bottom: 10px !important;
+    iframe, img, video {
+      margin-bottom: 15px !important;
     }
 
     .note {
-      margin-bottom: 10px !important;
+      margin: 15px !important;
       padding: 10px !important;
 
       if (hexo-config('note.icons')) {
@@ -63,7 +63,7 @@
     }
 
     .tabs .tab-content .tab-pane {
-      padding: 10px 10px 0 10px !important;
+      padding: 20px 10px 0 10px !important;
     }
   }
 
@@ -73,6 +73,20 @@
 
   .pagination {
     margin-top: 40px;
+  }
+
+  .yt-vid iframe {
+    width: 100% !important;
+    height: 56.25% !important;
+  }
+
+  .post-tags {
+    margin-top:25px !important;
+    padding-bottom:8px
+  }
+
+  hr {
+    margin: 25px 0 !important;
   }
 }
 

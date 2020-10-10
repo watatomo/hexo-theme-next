@@ -1,14 +1,14 @@
 name: English
 
 title:
-  archive: Archive
+  archive: History
   category: Category
   tag: Tag
   schedule: Schedule
 
 menu:
   home: Home
-  archives: Archives
+  archives: History
   categories: Categories
   tags: Tags
   about: About
@@ -34,12 +34,12 @@ post:
   views: Views
   related_posts: Related Posts
   copyright:
-    author: Post author
+    author: Author
     link: Post link
     post_author: Written by
     post_link: This article originally appeared on
     license_title: Copyright Notice
-    license_content: "All articles in this blog are licensed under %s unless stating additionally."
+    license_content: "All articles in this blog are licensed under %s unless stated otherwise."
 
 footer:
   powered: "Powered by %s"
@@ -49,18 +49,18 @@ footer:
 counter:
   tag_cloud:
     zero: No tags
-    one: 1 tag in total
-    other: "%d tags in total"
+    one: 1 tag
+    other: "%d tags"
 
   categories:
     zero: No categories
-    one: 1 category in total
-    other: "%d categories in total"
+    one: 1 category
+    other: "%d categories"
 
   archive_posts:
-    zero: No posts.
-    one: 1 post.
-    other: "%d posts in total."
+    zero: No posts
+    one: 1 post
+    other: "%d posts"
 
 state:
   posts: posts
@@ -69,12 +69,12 @@ state:
 
 search:
   placeholder: Searching...
-  empty: "We didn't find any results for the search: %s"
+  empty: "No results found"
   hits_time: "%s results found in %s ms"
   hits: "%s results found"
 
 cheers:
-  um: Um..
+  um: Um...
   ok: OK
   nice: Nice
   good: Good
@@ -96,7 +96,7 @@ reward:
   bitcoin: Bitcoin
 
 follow_me:
-  welcome: Welcome to my other publishing channels
+  welcome: Follow me
 
 accessibility:
   nav_toggle: Toggle navigation bar
@@ -104,8 +104,8 @@ accessibility:
   next_page: Next page
 
 symbols_count_time:
-  count: Symbols count in article
-  count_total: Symbols count total
+  count: Character count
+  count_total: Total character count
   time: Reading time
-  time_total: Reading time total
-  time_minutes: mins.
+  time_total: Total reading time
+  time_minutes: min
