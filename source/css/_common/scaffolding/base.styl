@@ -85,3 +85,98 @@ dd {
   margin: 0;
   padding: 0;
 }
+
+.toc {
+	text-align: center;
+}
+
+.toc .btn {
+	padding: 0 15px !important;
+}
+
+.toc div {
+	padding: 4px 0 4px
+}
+
+.meta-br {
+	height: 2px;
+	width: 100%;
+	background-color: transparent;
+	display: block
+}
+
+.post-block ol:only-of-type, .post-block ul:only-of-type {
+	padding-left: 20px;
+}
+
+.post-block li {
+	margin-bottom: 2px
+}
+
+a.arrow-link {
+	border-style: none !important;
+	color: #3366FF;
+}
+
+a.arrow-link:hover, a.fn:hover {
+	color: #142866;
+}
+
+a.fn {
+	color: #3366FF;
+	font-size: .88em;
+	border-style: none !important;
+}
+
+.rightalign {
+	display: block;
+	text-align: right !important;
+}
+
+a.noline {
+	border-style: none !important;
+}
+
+.imgright {
+	float: right;
+	max-width: 40%;
+	max-height: auto;
+}
+
+.spoilerbtn {
+  background: var(--btn-default-bg);
+  border: 2px solid var(--btn-default-border-color);
+  border-radius: 2px;
+  color: var(--btn-default-color);
+  display: inline-block;
+  font-size: .875em;
+  padding: 5px;
+}
+
+.spoilerbtn:hover {
+  border-color: #222;
+  background-color: #222;
+  color: #fff;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+
+.spoiler {
+  overflow: hidden;
+}
+
+.spoiler > div {
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.spoilerbtn[value="Show"]+.spoiler>div {
+  max-height: 0;
+}
+
+.spoilerbtn[value="Hide"]+.spoiler>div {
+  max-height: 150px;
+}
