@@ -9,7 +9,6 @@
     <link itemprop="mainEntityOfPage" href="{{ post.permalink }}">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="{{ url_for(theme.avatar.url or theme.images + '/avatar.gif') }}">
       <meta itemprop="name" content="{{ author }}">
       <meta itemprop="description" content="{{ description }}">
     </span>
@@ -46,10 +45,6 @@
 
         <div class="post-meta-container">
           {{ partial('_partials/post/post-meta.njk') }}
-
-          {%- if post.description and (not theme.excerpt_description or not is_index) %}
-            <div class="post-description">{{ post.description }}</div>
-          {%- endif %}
         </div>
       </header>
     {%- endif %}

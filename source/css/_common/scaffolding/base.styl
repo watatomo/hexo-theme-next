@@ -32,7 +32,7 @@ for $headline in (1 .. 6) {
 }
 
 p {
-  margin: 0 0 20px 0;
+  margin: 0 0 1em 0;
 }
 
 a, span.exturl {
@@ -59,10 +59,9 @@ iframe, img, video, embed {
 }
 
 hr {
-  background-image: repeating-linear-gradient(-45deg, $grey-lighter, $grey-lighter 4px, transparent 4px, transparent 8px);
   border: 0;
-  height: 3px;
-  margin: 40px 0;
+  border-bottom: 1px dashed #ddd;
+  margin: 1.875em 0;
 }
 
 blockquote {
@@ -169,9 +168,20 @@ a.noline {
   overflow: hidden;
 }
 
-.spoiler > div {
+.spoiler > .spoilerbox {
   overflow: hidden;
   transition: all 1s ease;
+  background: #eee;
+  border-radius: 2px;
+  margin-top: .5em;
+}
+
+.spoilertext {
+  padding: 1em;
+}
+
+.spoilertext > blockquote {
+  border-color: #ababab;
 }
 
 .spoilerbtn[value="Show"]+.spoiler>div {

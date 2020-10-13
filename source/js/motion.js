@@ -18,7 +18,7 @@ NexT.motion.integrator = {
     if (!CONFIG.motion.async) this.queue = [this.queue];
     this.queue.forEach(sequence => {
       const timeline = window.anime.timeline({
-        duration: 200,
+        duration: 175,
         easing  : 'linear'
       });
       sequence.forEach(item => {
@@ -62,7 +62,7 @@ NexT.motion.middleWares = {
     document.querySelectorAll('.menu-item').forEach(targets => {
       sequence.push({
         targets,
-        complete: () => targets.classList.add('animated', 'fadeInDown'),
+        complete: () => targets.classList.add('animated', 'fadeInLeft'),
         deltaT  : '-=200'
       });
     });
