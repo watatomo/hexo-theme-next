@@ -25,7 +25,7 @@
 // ==================================================
 // Post blocks.
 .main-inner > {
-  .sub-menu, .post-block, .tabs-comment, .comments, .pagination {
+  .sub-menu, .post-block, .tabs-comment, .pagination {
     background: var(--content-bg-color);
     border-radius: $border-radius-inner;
     box-shadow: $box-shadow-inner;
@@ -47,7 +47,7 @@
 }
 
 // Post & Comments blocks.
-.post-block, .comments {
+.post-block {
   padding: $content-desktop-padding;
 }
 
@@ -95,12 +95,6 @@
     // Inside posts blocks content padding (default 40px).
     padding: ($content-tablet-padding * 2);
   }
-
-  .comments {
-    padding: $content-tablet-padding ($content-tablet-padding * 2);
-    // padding: initial;
-    // padding-top: $content-tablet-padding;
-  }
 }
 
 // ==================================================
@@ -122,9 +116,5 @@
   .post-block {
     // Inside posts blocks content padding (default 40px).
     padding: $sidebar-offset;
-  }
-
-  .comments {
-    padding: 10px $sidebar-offset;
   }
 }

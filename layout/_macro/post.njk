@@ -59,8 +59,8 @@
           <!--noindex-->
           {%- if theme.read_more_btn %}
             <div class="post-button">
-              <a class="btn" href="{{ url_for(post.path) }}">
-                {{ __('post.read_more') }} »
+              <a class="btn rm-btn" href="{{ url_for(post.path) }}">
+                Read more
               </a>
             </div>
           {%- endif %}
@@ -70,8 +70,8 @@
           <!--noindex-->
           {%- if theme.read_more_btn %}
             <div class="post-button">
-              <a class="btn" href="{{ url_for(post.path) }}#more" rel="contents">
-                {{ __('post.read_more') }} »
+              <a class="btn rm-btn" href="{{ url_for(post.path) }}#more" rel="contents">
+                Read more
               </a>
             </div>
           {%- endif %}

@@ -42,7 +42,7 @@
 
         {%- set cat_length = post.categories.length %}
         {%- if cat_length > 1 and loop.index !== cat_length %}
-          <span style="margin-left:-4px">{{ __('symbol.comma') }}</span>
+          <span class="meta-c">{{ __('symbol.comma') }}</span>
         {%- endif %}
       {%- endfor %}
     </span>
